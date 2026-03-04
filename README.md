@@ -176,7 +176,7 @@ AdjLeafGNN/
 Clone repository
 
 ```
-git clone https://github.com/username/AdjLeafGNN.git
+git clone https://github.com/surekhareddy123/AdjLeafGNN
 cd AdjLeafGNN
 ```
 
