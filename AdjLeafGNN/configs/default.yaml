@@ -1,0 +1,33 @@
+seed: 42
+device: auto   # auto|cpu|cuda
+img_size: 224
+num_workers: 4
+
+train:
+  epochs: 150
+  batch_size: 32
+  lr: 1.0e-4
+  weight_decay: 1.0e-5
+  dropout: 0.3
+  early_stopping_patience: 15
+  scheduler: plateau  # none|step|plateau
+  step_size: 30
+  gamma: 0.5
+
+multitask:
+  lambda_cls: 1.0
+  lambda_spread: 0.5
+  spread_label_mode: neighbor_any   # neighbor_any|distance_threshold
+  spread_delta: 0.65                # used only if distance_threshold
+  infected_class_policy: non_healthy # non_healthy|all
+
+graph:
+  k_nn: 5
+  use_self_loops: true
+
+model:
+  gnn_type: gcn   # gcn|gat
+  gnn_hidden: 256
+  gat_heads: 4
+  encoder_channels: 64
+  aspp_dilations: [1, 6, 12, 18]
