@@ -390,10 +390,7 @@ If you are using this repository or the corresponding research work, please cite
 
 ```
 @article{AdjLeafGNN2026,
-title={AdjLeafGNN: A Graph Neural Network Framework for Leaf Disease Detection and Infection Spread Prediction},
-author={Author Name},
-journal={Journal Name},
-year={2026}
+title={AdjLeafGNN: A Graph Neural Network Framework for Leaf Disease Detection and Infection Spread Prediction}
 }
 ```
 
