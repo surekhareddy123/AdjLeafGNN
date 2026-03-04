@@ -391,7 +391,7 @@ title={AdjLeafGNN: A Graph Neural Network Framework for Leaf Disease Detection a
 
 ---
 
-## License
+# LICENSE
 
 ```
 This project is licensed under the MIT License.
