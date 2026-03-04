@@ -382,20 +382,27 @@ The framework ensures reproducibility using:
 
 ---
 
+---
+
 # Citation
 
+If you are using this repository or the corresponding research work, please cite the following paper:
+
 ```
-if you are using my paper side this title 
-@article{AdjLeafGNN2026},
+@article{AdjLeafGNN2026,
 title={AdjLeafGNN: A Graph Neural Network Framework for Leaf Disease Detection and Infection Spread Prediction},
+author={Author Name},
+journal={Journal Name},
+year={2026}
+}
+```
 
 ---
 
-# LICENSE
+# License
 
-```
 This project is licensed under the MIT License.
 
-See the [LICENSE](LICENSE) file for details.
+See the LICENSE file for details.
 
----
+
