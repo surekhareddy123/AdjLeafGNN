@@ -1,3 +1,12 @@
+ 
+
+```
+[![DOI](https://zenodo.org/badge/1172485554.svg)](https://doi.org/10.5281/zenodo.18862439)
+```
+
+  
+
+
 # AdjLeafGNN: Graph Neural Network Framework for Leaf Disease Detection and Spread Prediction
 
 ## Overview
