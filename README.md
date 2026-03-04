@@ -389,8 +389,10 @@ if you are using my paper side this title
 @article{AdjLeafGNN2026},
 title={AdjLeafGNN: A Graph Neural Network Framework for Leaf Disease Detection and Infection Spread Prediction},
 
-## License
 
+
+## License
+```
 This project is licensed under the MIT License.
 
 See the [LICENSE](LICENSE) file for details.
