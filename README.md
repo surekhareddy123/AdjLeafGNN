@@ -1,8 +1,7 @@
  
-
-```
 [![DOI](https://zenodo.org/badge/1172485554.svg)](https://doi.org/10.5281/zenodo.18862439)
-```
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 Code Archive
 GitHub repository:
 https://github.com/surekhareddy123/AdjLeafGNN
@@ -192,7 +191,7 @@ AdjLeafGNN/
 Clone repository
 
 ```
-git clone https://github.com/username/AdjLeafGNN.git
+git clone https://github.com/surekhareddy123/AdjLeafGNN.git
 cd AdjLeafGNN
 ```
 
