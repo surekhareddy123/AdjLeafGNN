@@ -397,18 +397,12 @@ crossval_summary.json
 
 # Reproducibility
 
-To reproduce experiments:
-
-```
-python main.py --mode train --cfg configs/default.yaml
-```
-
-The framework ensures reproducibility using:
-
-* Fixed random seeds
-* Deterministic training
-* Stratified cross-validation
-* Configuration files
+To reproduce the experiments:
+1.	Download the PlantVillage dataset from the Kaggle source listed above.
+2.	Organize the images into class-specific folders as shown above.
+3.	Update the dataset path in the training command.
+4.	Run the code with the provided configuration file.
+5.	The reported results are based on stratified 5-fold cross-validation, not on a single random split.
 
 ---
 
