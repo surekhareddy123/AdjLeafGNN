@@ -215,21 +215,36 @@ Dependencies:
 ---
 
 # Dataset Preparation
-
-Expected structure:
-
-```
+Dataset Preparation
+This study uses the PlantVillage dataset for plant leaf disease classification and spread prediction experiments.
+Dataset source used in this work:
+Kaggle PlantVillage distribution: https://www.kaggle.com/datasets/mohitsingh1804/plantvillage
+Canonical dataset citation:
+Hughes, D.P. and Salathé, M., 2015. An open access repository of images on plant health to enable the development of mobile disease diagnostics. arXiv preprint arXiv:1511.08060.
+Version / access information:
+The dataset was downloaded from the above Kaggle source and accessed in 2026 for this study.
+Dataset contents used:
+The dataset consists of class-labeled RGB images of healthy and diseased plant leaves. In this project, images are organized into class-specific folders and loaded using the standard ImageFolder format in PyTorch.
+Directory structure used by the code:
 dataset/
-│
-├── apple_scab/
-│   ├── img1.jpg
-│   ├── img2.jpg
-│
-├── apple_black_rot/
-│   ├── img3.jpg
-│
+├── class_1/
+│   ├── img001.jpg
+│   ├── img002.jpg
+├── class_2/
+│   ├── img003.jpg
+│   ├── img004.jpg
 ├── healthy/
-│   ├── img4.jpg
+│   ├── img005.jpg
+Experimental split protocol:
+The study does not use a fixed train/test folder split. Instead, the full dataset is organized in class folders and evaluated using stratified 5-fold cross-validation, ensuring balanced class distribution across training and validation folds.
+Preprocessing and loading:
+•	Images are resized to the configured input resolution.
+•	Standard normalization is applied.
+•	Data augmentation is applied only to training folds.
+•	The dataset is loaded through the PyTorch ImageFolder pipeline.
+License / usage note:
+Users should consult the original PlantVillage project page and the Kaggle dataset page for the applicable dataset terms, licensing, and usage conditions before reuse.
+
 ```
 
 ---
