@@ -192,7 +192,7 @@ AdjLeafGNN/
 Clone repository
 
 ```
-git clone https://github.com/surekhareddy123/AdjLeafGNN
+git clone https://github.com/username/AdjLeafGNN.git
 cd AdjLeafGNN
 ```
 
@@ -215,17 +215,31 @@ Dependencies:
 ---
 
 # Dataset Preparation
-Dataset Preparation
-This study uses the PlantVillage dataset for plant leaf disease classification and spread prediction experiments.
-Dataset source used in this work:
-Kaggle PlantVillage distribution: https://www.kaggle.com/datasets/mohitsingh1804/plantvillage
-Canonical dataset citation:
-Hughes, D.P. and Salathé, M., 2015. An open access repository of images on plant health to enable the development of mobile disease diagnostics. arXiv preprint arXiv:1511.08060.
-Version / access information:
-The dataset was downloaded from the above Kaggle source and accessed in 2026 for this study.
-Dataset contents used:
-The dataset consists of class-labeled RGB images of healthy and diseased plant leaves. In this project, images are organized into class-specific folders and loaded using the standard ImageFolder format in PyTorch.
-Directory structure used by the code:
+
+This study uses the **PlantVillage dataset** for plant leaf disease classification and spread prediction experiments.
+
+**Dataset source used in this work:**
+
+Kaggle PlantVillage distribution:
+https://www.kaggle.com/datasets/mohitsingh1804/plantvillage
+
+**Canonical dataset citation:**
+
+Hughes, D.P. and Salathé, M., 2015.
+An open access repository of images on plant health to enable the development of mobile disease diagnostics.
+*arXiv preprint arXiv:1511.08060.*
+
+**Version / access information:**
+
+The dataset was downloaded from the above Kaggle source and accessed in **2026** for this study.
+
+**Dataset contents used:**
+
+The dataset consists of class-labeled RGB images of healthy and diseased plant leaves. In this project, images are organized into class-specific folders and loaded using the standard **ImageFolder format in PyTorch**.
+
+**Directory structure used by the code:**
+
+```
 dataset/
 ├── class_1/
 │   ├── img001.jpg
@@ -235,17 +249,22 @@ dataset/
 │   ├── img004.jpg
 ├── healthy/
 │   ├── img005.jpg
-Experimental split protocol:
-The study does not use a fixed train/test folder split. Instead, the full dataset is organized in class folders and evaluated using stratified 5-fold cross-validation, ensuring balanced class distribution across training and validation folds.
-Preprocessing and loading:
-•	Images are resized to the configured input resolution.
-•	Standard normalization is applied.
-•	Data augmentation is applied only to training folds.
-•	The dataset is loaded through the PyTorch ImageFolder pipeline.
-License / usage note:
-Users should consult the original PlantVillage project page and the Kaggle dataset page for the applicable dataset terms, licensing, and usage conditions before reuse.
-
 ```
+
+**Experimental split protocol:**
+
+The study does not use a fixed train/test folder split. Instead, the full dataset is organized in class folders and evaluated using **stratified 5-fold cross-validation**, ensuring balanced class distribution across training and validation folds.
+
+**Preprocessing and loading:**
+
+* Images are resized to the configured input resolution.
+* Standard normalization is applied.
+* Data augmentation is applied only to training folds.
+* The dataset is loaded through the **PyTorch ImageFolder pipeline**.
+
+**License / usage note:**
+
+Users should consult the original PlantVillage project page and the Kaggle dataset page for the applicable dataset terms, licensing, and usage conditions before reuse.
 
 ---
 
@@ -377,12 +396,19 @@ crossval_summary.json
 ---
 
 # Reproducibility
-To reproduce the experiments:
-1.	Download the PlantVillage dataset from the Kaggle source listed above.
-2.	Organize the images into class-specific folders as shown above.
-3.	Update the dataset path in the training command.
-4.	Run the code with the provided configuration file.
-5.	The reported results are based on stratified 5-fold cross-validation, not on a single random split.
+
+To reproduce experiments:
+
+```
+python main.py --mode train --cfg configs/default.yaml
+```
+
+The framework ensures reproducibility using:
+
+* Fixed random seeds
+* Deterministic training
+* Stratified cross-validation
+* Configuration files
 
 ---
 
@@ -406,7 +432,6 @@ To reproduce the experiments:
 
 ---
 
----
 
 # Citation
 
